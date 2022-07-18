@@ -15,20 +15,20 @@
         style="@style/title_purple" />
 
     <TextView
-        android:text="Hello World!!!!"
+        android:text="@string/hello_world_small"
         style="@style/title_purple"
         android:textSize="24sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
     <RadioButton
-        android:text="Olá, RadioButon"
+        android:text="@string/hi_radiobuton"
         style="@style/title_purple"
         android:textSize="12sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
     <CheckBox
-        android:text="Olá, CheckBox"
+        android:text="@string/hi_checkbox"
         style="@style/title_purple"
         android:textSize="64sp"
         android:layout_width="wrap_content"
