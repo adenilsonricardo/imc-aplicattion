@@ -9,29 +9,34 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:text="Hello World!"
+        style="@style/title_purple"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/title_purple" />
+        android:text="Hello World!" />
 
     <TextView
-        android:text="@string/hello_world_small"
         style="@style/title_purple"
-        android:textSize="24sp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="24dp"
+        android:paddingTop="16dp"
+        android:text="@string/hello_world_small"
+        android:textSize="24sp" />
 
     <RadioButton
+        style="@style/title_purple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/hi_radiobuton"
-        style="@style/title_purple"
         android:textSize="12sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:visibility="invisible"
+        tools:visibility="visible" />
+
     <CheckBox
-        android:text="@string/hi_checkbox"
         style="@style/title_purple"
-        android:textSize="64sp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="@string/hi_checkbox"
+        android:textSize="64sp" />
 
 </LinearLayout>
