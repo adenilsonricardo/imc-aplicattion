@@ -1,6 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/titleTxt"
+        style="@style/title_purple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/pesoEDT"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="64dp"
+        android:text="@string/imc" />
+
+    <EditText
+        android:id="@+id/pesoEDT"
+        style="@style/input_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="64dp"
+        android:hint="@string/hint_peso" />
+
+    <EditText
+        android:id="@+id/alturaEDT"
+        style="@style/input_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pesoEDT"
+        android:layout_alignStart="@id/pesoEDT"
+        android:layout_alignEnd="@id/pesoEDT"
+        android:layout_marginHorizontal="64dp"
+        android:hint="@string/hint_altura" />
+
+    <Button
+        android:id="@+id/calcularBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="46dp"
+        android:backgroundTint="@color/holo_green_light"
+        android:padding="16dp"
+        android:text="@string/calcular"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
