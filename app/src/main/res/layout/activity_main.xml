@@ -9,34 +9,37 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/titleTxt"
         style="@style/title_purple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="64dp"
+        android:text="@string/imc" />
+
+    <EditText
+        android:id="@+id/pesoEDT"
+        style="@style/input_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="64dp"
+        android:hint="@string/hint_peso" />
+
+    <EditText
+        android:id="@+id/alturaEDT"
+        style="@style/input_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="64dp"
+        android:hint="@string/hint_altura" />
+
+    <Button
+        android:id="@+id/calcularBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
-
-    <TextView
-        style="@style/title_purple"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="24dp"
-        android:paddingTop="16dp"
-        android:text="@string/hello_world_small"
-        android:textSize="24sp" />
-
-    <RadioButton
-        style="@style/title_purple"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hi_radiobuton"
-        android:textSize="12sp"
-        android:visibility="invisible"
-        tools:visibility="visible" />
-
-    <CheckBox
-        style="@style/title_purple"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hi_checkbox"
-        android:textSize="64sp" />
-
+        android:layout_marginTop="46dp"
+        android:backgroundTint="@color/holo_green_light"
+        android:padding="16dp"
+        android:text="@string/calcular"
+        android:textSize="16sp"
+        android:textStyle="bold" />
 </LinearLayout>
